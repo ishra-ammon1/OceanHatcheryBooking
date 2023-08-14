@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Details Page</title>
+    <link rel="stylesheet" href="./Details.css" />
+    <script src="./Details.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay=autoplay loop=loop muted=muted playsinline=playsinline class="backgroundvid">
+            <source src="turtle5.mov" type="video/mp4" />
+        </video>
+    </div>
+    <header>
+        <h1>BOOK TICKETS</h1>
+        <ul class="horizontal-list">
+            <li><a href="booknow.html">Create New Ticket</a></li>
+            <li><a href="payment.html">View All Tickets</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+
+    <div class="Tickets-continue-pg">
+        <div class="rectangle-parent">
+            <section id="details">
+                <h2>ENTER YOUR DETAILS</h2>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" />
+                <label for="mobileNumber">Mobile Number:</label>
+                <select id="mobileNumberPrefix" name="mobileNumberPrefix">
+                    <option value="">Select Country</option>
+                    <option value="+91">India</option>
+                    <option value="+94">Sri Lanka</option>
+                    <option value="+1">United States</option>
+                    <option value="+65">Singapore</option>
+                    <option value="+86">China</option>
+                    <option value="+44">United Kingdom</option>
+                </select>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="555 555 5555" />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" />
+                <label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="you@example.com" />
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </section>
+
+            <button>
+                <a href="Payment.html">Continue</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+

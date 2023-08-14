@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="booknow.css" />
+    <script src="boooknow.js"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <video autoplay=autoplay loop=loop muted=muted playsinline=playsinline class="backgroundvid">
+            <source src="turtle5.mov" type="video/mp4" />
+        </video>
+    </div>
+    <header>
+        <h1>BOOK TICKETS</h1>
+        <ul class="horizontal-list">
+            <li><a href="booknow.html">Create New Ticket</a></li>
+            <li><a href="payment.html">View All Tickets</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+
+    <div class="Tickets-continue-pg">
+        <div class="rectangle-parent">
+            <img class="frame-item" alt="turtle in blue sea" src="bentota11.jpg" />
+        </div>
+
+        <section>
+            <h1>Dates</h1>
+            <p>Choose the date you want to visit the hatchery below;</p>
+            <form action="">
+                <input type="date" name="date" id="date">
+            </form>
+        </section>
+
+
+        <section id="guests">
+            <h2>Guests</h2>
+            <div class="category">
+                <label for="slAdult">SL Adult:</label>
+                <div class="input-container">
+                    <input type="number" id="slAdult" min="0" value="0" step="1">
+                    <button class="increment">+</button>
+                    <button class="decrement">-</button>
+                </div>
+            </div>
+            <div class="category">
+                <label for="slChild">SL Child:</label>
+                <div class="input-container">
+                    <input type="number" id="slChild" min="0" value="0" step="1">
+                    <button class="increment">+</button>
+                    <button class="decrement">-</button>
+                </div>
+            </div>
+            <div class="category">
+                <label for="ForeingerAdult">Foreinger Adult:</label>
+                <div class="input-container">
+                    <input type="number" id="ForeingerAdult" min="0" value="0" step="1">
+                    <button class="increment">+</button>
+                    <button class="decrement">-</button>
+                </div>
+            </div>
+            <div class="category">
+                <label for="ForeingerChild">Foreinger Child:</label>
+                <div class="input-container">
+                    <input type="number" id="ForeingerChild" min="0" value="0" step="1">
+                    <button class="increment">+</button>
+                    <button class="decrement">-</button>
+                </div>
+            </div>
+            <div class="category">
+                <label for="Infant">Infant:</label>
+                <div class="input-container">
+                    <input type="number" id="Infant" min="0" value="0" step="1">
+                    <button class="increment">+</button>
+                    <button class="decrement">-</button>
+                </div>
+            </div>
+        </section>
+
+        <section3 id="duration">
+            <h2>Duration</h2>
+            <label for="timeSlot">Select Time Slot:</label>
+            <select id="timeSlot">
+                <option value="07-08">07.00 am - 08.00 am</option>
+                <option value="08-09">08.00 am - 09.00 am</option>
+                <option value="09-10">09.00 am - 10.00 am</option>
+                <option value="10-11">10.00 am - 11.00 am (Peak)</option>
+                <option value="11-12">11.00 am - 12.00 pm</option>
+                <option value="12-01">12.00 pm - 01.00 pm</option>
+                <option value="01-02">01.00 pm - 02.00 pm</option>
+                <option value="02-03">02.00 pm - 03.00 pm</option>
+                <option value="03-04">03.00 pm - 04.00 pm</option>
+                <option value="04-05">04.00 pm - 05.00 pm</option>
+                <option value="05-06">05.00 pm - 06.00 pm (Peak)</option>
+            </select>
+        </section3>
+
+        <section4 id="pricing">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Normal Hour Charge</th>
+                    <th>Peak Hour Charge</th>
+                </tr>
+                <tr>
+                    <td>SL Adult</td>
+                    <td>$4</td>
+                    <td>$6</td>
+                </tr>
+                <tr>
+                    <td>SL Child</td>
+                    <td>$2</td>
+                    <td>$3</td>
+                </tr>
+                <tr>
+                    <td>Foreigner Adult</td>
+                    <td>$10</td>
+                    <td>$13</td>
+                </tr>
+                <tr>
+                    <td>Foreigner Child</td>
+                    <td>$5</td>
+                    <td>$8</td>
+                </tr>
+                <tr>
+                    <td>Infant</td>
+                    <td>Free</td>
+                    <td>Free</td>
+                </tr>
+            </table>
+        </section4>
+
+
+     <section5 id="summary">
+    <h2>Summary</h2>
+    <table>
+      <tr>
+        <td>Date</td>
+        <td id="summaryDate"></td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td id="summaryTime"></td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td id="summaryDuration"></td>
+      </tr>
+      <tr>
+        <td>Tickets</td>
+        <td id="summaryTickets"></td>
+      </tr>
+      <tr>
+        <td>Total Payable</td>
+        <td id="summaryTotal"></td>
+      </tr>
+    </table>
+   
+
+    </section5>
+</div>
+
+<div class="button">
+  <button id="continueBut" >
+    <a href="Details.html" >
+      Next
+    </a>
+  </button>
+
+  <button>
+      <a href="Details.html">Continue to Details</a>
+  </button>
+</div>
+
+</body>
+</html>

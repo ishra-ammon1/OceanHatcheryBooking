@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="confirm.css" />
+    <script src="confirm.js"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <video autoplay=autoplay loop=loop muted=muted playsinline=playsinline class="backgroundvid">
+            <source src="turtle5.mov" type="video/mp4" />
+        </video>
+    </div>
+    <header>
+        <h1>BOOKING CONFIRMATION</h1>
+        <ul class="horizontal-list">
+            <li><a href="booknow.html">Create New Ticket</a></li>
+            <li><a href="payment.html">View All Tickets</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+   
+        <div class="header">
+            <h1>Booking Confirmation</h1>
+        </div>
+        <div class="confirmation-message">
+            <p>Thank you for your order.
+            Your order has been confirmed with us.
+            You can show this confirmation at the entrance.
+            Following is the summary of your order:</p>
+        </div>
+        <table class="summary-table">
+            <tr>
+                <td>Date:</td>
+                <td id="summaryDate"></td>
+            </tr>
+            <tr>
+                <td>Time Slot(s):</td>
+                <td id="summaryTime"></td>
+            </tr>
+            <tr>
+                <td>Duration:</td>
+                <td id="summaryDuration"></td>
+            </tr>
+            <tr>
+                <td>Tickets:</td>
+                <td id="summaryTickets"></td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td id="summaryTotal"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+

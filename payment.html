@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="payment.css" />
+    <script src="payment.js"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <video autoplay=autoplay loop=loop muted=muted playsinline=playsinline class="backgroundvid">
+            <source src="turtle5.mov" type="video/mp4" />
+        </video>
+    </div>
+    <header>
+        <h1>BOOK TICKETS</h1>
+        <ul class="horizontal-list">
+            <li><a href="booknow.html">Create New Ticket</a></li>
+            <li><a href="payment.html">View All Tickets</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+
+    <section id="details">
+        <h2>Enter your payment details</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" />
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" />
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" />
+
+        <button>
+            <a href="confirm.html">Continue Payment</a>
+        </button>
+    </section>
+
+</body>
+</html>
+

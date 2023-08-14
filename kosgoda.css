@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0998f7;
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.backgroundvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.information-section {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.information-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.information-section h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.information-section p {
+    margin-bottom: 10px;
+}
+
+.information-section ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.information-section li {
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 767px) {
+    .navbar {
+      padding: 10px 4%;
+    }
+  
+    .navbar ul li {
+      margin: 0 5px;
+    }
+  
+    .navbar ul li a {
+      font-size: 12px;
+    }
+  
+    .navbar-toggle {
+      display: none; /* Hides the toggle button by default */
+    }
+  
+    .navbar-menu {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #0998f7;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+  
+    .navbar-toggle-label {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .navbar-toggle-label span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: white;
+      margin-bottom: 4px;
+      transition: transform 0.3s ease;
+    }
+  
+    .navbar-toggle:checked ~ .navbar-menu {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .navbar-toggle:checked ~ .navbar-toggle-label span:first-child {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .navbar-toggle:checked ~ .navbar-toggle-label span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-toggle:checked ~ .navbar-toggle-label span:last-child {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
